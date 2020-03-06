@@ -9,10 +9,10 @@ import FullScreenMap from "views/Maps/FullScreenMap.js";
 import GoogleMaps from "views/Maps/GoogleMaps.js";
 import GridSystem from "views/Components/GridSystem.js";
 import Icons from "views/Components/Icons.js";
-// import LockScreenPage from "views/Pages/LockScreenPage.js";
-// import LoginPage from "views/Pages/LoginPage.js";
-// import RegisterPage from "views/Pages/RegisterPage.js";
-// import PricingPage from "views/Pages/PricingPage.js";
+import LockScreenPage from "views/Pages/LockScreenPage.js";
+import LoginPage from "views/Pages/LoginPage.js";
+import RegisterPage from "views/Pages/RegisterPage.js";
+import PricingPage from "views/Pages/PricingPage.js";
 import Notifications from "views/Components/Notifications.js";
 import Panels from "views/Components/Panels.js";
 import RTLSupport from "views/Pages/RTLSupport.js";
@@ -54,15 +54,15 @@ var dashRoutes = [
     icon: Image,
     state: "pageCollapse",
     views: [
-      // {
-      //   path: "/pricing-page",
-      //   name: "Pricing Page",
-      //   rtlName: "عالتسعير",
-      //   mini: "PP",
-      //   rtlMini: "ع",
-      //   component: PricingPage,
-      //   layout: "/auth"
-      // },
+      {
+        path: "/pricing-page",
+        name: "Pricing Page",
+        rtlName: "عالتسعير",
+        mini: "PP",
+        rtlMini: "ع",
+        component: PricingPage,
+        layout: "/auth"
+      },
       {
         path: "/rtl-support-page",
         name: "RTL Support",
@@ -81,33 +81,33 @@ var dashRoutes = [
         component: TimelinePage,
         layout: "/admin"
       },
-      // {
-      //   path: "/login-page",
-      //   name: "Login Page",
-      //   rtlName: "هعذاتسجيل الدخول",
-      //   mini: "L",
-      //   rtlMini: "هعذا",
-      //   component: LoginPage,
-      //   layout: "/auth"
-      // },
-      // {
-      //   path: "/register-page",
-      //   name: "Register Page",
-      //   rtlName: "تسجيل",
-      //   mini: "R",
-      //   rtlMini: "صع",
-      //   component: RegisterPage,
-      //   layout: "/auth"
-      // },
-      // {
-      //   path: "/lock-screen-page",
-      //   name: "Lock Screen Page",
-      //   rtlName: "اقفل الشاشة",
-      //   mini: "LS",
-      //   rtlMini: "هذاع",
-      //   component: LockScreenPage,
-      //   layout: "/auth"
-      // },
+      {
+        path: "/login-page",
+        name: "Login Page",
+        rtlName: "هعذاتسجيل الدخول",
+        mini: "L",
+        rtlMini: "هعذا",
+        component: LoginPage,
+        layout: "/auth"
+      },
+      {
+        path: "/register-page",
+        name: "Register Page",
+        rtlName: "تسجيل",
+        mini: "R",
+        rtlMini: "صع",
+        component: RegisterPage,
+        layout: "/auth"
+      },
+      {
+        path: "/lock-screen-page",
+        name: "Lock Screen Page",
+        rtlName: "اقفل الشاشة",
+        mini: "LS",
+        rtlMini: "هذاع",
+        component: LockScreenPage,
+        layout: "/auth"
+      },
       {
         path: "/user-page",
         name: "User Profile",

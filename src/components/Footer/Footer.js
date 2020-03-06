@@ -35,39 +35,36 @@ export default function Footer(props) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a href="#home" className={block}>
+              <a href="/" className={block}>
                 {rtlActive ? "الصفحة الرئيسية" : "Home"}
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a href="#company" className={block}>
-                {rtlActive ? "شركة" : "Company"}
+              <a href="/" className={block}>
+                {rtlActive ? "شركة" : "Team"}
               </a>
             </ListItem>
+            
             <ListItem className={classes.inlineBlock}>
-              <a href="#portfolio" className={block}>
-                {rtlActive ? "بعدسة" : "Portfolio"}
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a href="#blog" className={block}>
+              <a href="/" className={block}>
                 {rtlActive ? "مدونة" : "Blog"}
               </a>
             </ListItem>
           </List>
         </div>
         <p className={classes.right}>
-          &copy; {1900 + new Date().getYear()}{" "}
+          &copy; {" "}
           <a
-            href="https://www.calcscout24.com"
+            href="/"
             className={anchor}
-            target="_blank"
+            // target="_blank"
           >
             {rtlActive ? "Calcscout 24" : "Calcscout 24"}
           </a>
-          {rtlActive
+          {", "}{1900 + new Date().getYear()}
+          {/* {rtlActive
             ? ""
-            : ", with love for society"}
+            : ", with love for society"} */}
         </p>
       </div>
     </footer>
