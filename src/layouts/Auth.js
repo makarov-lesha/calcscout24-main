@@ -65,6 +65,7 @@ export default function Pages(props) {
       return error;
     }
   };
+
   const getActiveRoute = routes => {
     let activeRoute = "Calcscout24";
     for (let i = 0; i < routes.length; i++) {
